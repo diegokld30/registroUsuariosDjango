@@ -13,5 +13,5 @@ def registerUser(request):
     else:
         form = PersonaForm()
 
-    return render(request, 'registerUser.html', )
+    return render(request, 'registerUser.html', {'form': form})
 
